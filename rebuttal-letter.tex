@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\usepackage[ansinew]{inputenc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{emlines}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{rotating}
+\usepackage{ifthen}
+\usepackage{theorem}
+\usepackage{epsfig}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{multibib}
+%\usepackage[numbers]{natbib}
+
+\newtheorem{corollary}{Corollary}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{lemma}
+
+\definecolor{darkgreen}{rgb}{0.01, 0.74, 0.25}
+\definecolor{myCyan}{RGB}{0,155,155}
+\newcommand{\awcomment}{\color{blue} AW:~}
+\newcommand{\nbcomment}{\color{darkgreen} NB:~}
+\newcommand{\klcomment}{\color{myCyan} KL:~}
+
+% Umgebungsdefinitionen: Abkürzungen
+\newcommand{\bc}{\begin{center}}
+	\newcommand{\ec}{\end{center}}
+\newcommand{\bt}{\begin{tabular}}
+	\newcommand{\et}{\end{tabular}}
+\newcommand{\bi}{\begin{itemize}}
+	\newcommand{\ei}{\end{itemize}}
+\newcommand{\ben}{\begin{enumerate}}
+	\newcommand{\een}{\end{enumerate}}
+\newcommand{\bd}{\begin{displaymath}}
+\newcommand{\ed}{\end{displaymath}}
+\newcommand{\beann}{\begin{eqnarray*}}
+	\newcommand{\eeann}{\end{eqnarray*}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\ba}{\begin{array}}
+	\newcommand{\ea}{\end{array}}
+
+
+\newcommand{\Btxtechreplong}{\hspace{-5pt}}
+\newcommand{\btxandlong}{\hspace{-3pt},}
+\newcommand{\btxeditionlong}{}
+\newcommand{\Btxinlong}{in:}
+\newcommand{\btxeditorslong}{editors}
+\newcommand{\btxpageslong}{\hspace{-5pt}}
+\newcommand{\btxvolumelong}{\hspace{-5pt}}
+\newcommand{\btxmonmaylong}{\hspace{-5pt}}
+\newcommand{\btxphdthesis}{\hspace{-5pt}}
+\newcommand{\btxeditorlong}{editor}
+\newcommand{\btxchapterlong}{\hspace{-5pt}}
+
+% Mengenbezeichnungen
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbY}{\mathbb{Y}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbS}{\mathbb{S}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbG}{\mathbb{G}}
+\newcommand{\bbT}{\mathbb{T}}
+
+% geschwungene Buchstaben
+\newcommand{\deB}{\mathcal{B}}
+\newcommand{\deF}{\mathcal{F}}
+\newcommand{\deA}{\mathcal{A}}
+\newcommand{\deY}{\mathcal{Y}}
+\newcommand{\deS}{\mathcal{S}}
+\newcommand{\deL}{\mathcal{L}}
+\newcommand{\deH}{\mathcal{H}}
+\newcommand{\deE}{\mathcal{E}}
+\newcommand{\deP}{\mathcal{P}}
+\newcommand{\deG}{\mathcal{G}}
+\newcommand{\deT}{\mathcal{T}}
+\newcommand{\deff}{\mathcal{f}}
+\newcommand{\dep}{\mathcal{p}}
+
+%Vektoren und Matrixen
+\newcommand{\vp}{{\bf p}}
+\newcommand{\vq}{{\bf q}}
+\newcommand{\vpi}{{\bf \pi}}
+\newcommand{\vx}{{\bf x}}
+\newcommand{\vX}{{\bf X}}
+\newcommand{\vN}{{\bf N}}
+\newcommand{\vQ}{{\bf Q}}
+\newcommand{\vtQ}{{\bf \tilde Q}}
+
+%Schriftgröße in Formeln
+\newcommand{\mD}{\displaystyle}
+\newcommand{\mT}{\textstyle}
+\newcommand{\mS}{\scriptstyle}
+\newcommand{\mSS}{\scriptscriptstyle}
+
+%Erwartungswerte und Varianzen
+\newcommand{\E}{\mathnormal{E}}
+\newcommand{\Var}{\mathnormal{V\!ar}}
+\newcommand{\Cov}{\mathnormal{COV}}
+\newcommand{\Corr}{\mathnormal{CORR}}
+
+%Abstand (wie bei bigm...)
+\newcommand{\m}[1]{\,#1\,}
+\newcommand{\nn}{\nonumber}
+
+
+%SPECIAL FORMATTING
+\frenchspacing
+
+%f"ur fehlende Einfr"uckung
+\setlength{\parindent}{18pt}
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+
+\setlength{\tabcolsep}{0.75ex}
+%Seitenformatierung
+\addtolength{\textheight}{90pt}
+\addtolength{\topmargin}{-60pt}
+\addtolength{\footskip}{10pt}
+\oddsidemargin0cm
+\evensidemargin0cm
+
+\usepackage{natbib}
+\textwidth16cm
+\renewcommand{\baselinestretch}{1.25} \small \normalsize
+\newcites{sec}{References}
+
+\begin{document}
+%***********************************************************************
+\noindent Dear editors, 
+\\
+\\
+Thank you for the opportunity to revise our paper, "Real-time processing of cybersecurity system data for attacker profiling", for publication in the proceedings from the {\it Informatics'2019 Conference}. 
+\\
+\\
+We would like to thank you and the reviewers for the very positive and constructive feedback, which helped us significantly improve the paper. We have gone through the comments very carefully and we have rewritten parts of the paper.
+In particular
+\begin{itemize}
+\item we specified in detail connection to previous research
+\item we have fixed quality of figures and
+\item we have proof-read and grammar-checked our paper.
+\end{itemize}
+The replies to the reviewers contain point-by-point responses to the specific comments in each review. Please do not hesitate to contact us if you need any additional information about the manuscript. Thank you for your consideration.
+\\
+\\
+Kind regards, \\
+Patrik Pekarcik
+
+\newpage
+\begin{center}
+\large
+Reply to Reviewer 1
+\\
+\end{center}
+We would like to thank the reviewer for the comments which helped us a lot to improve the paper. In the following we address the comments in detail.
+\ben[1.]
+\item \underline{Comment:} {\it  Chapter III. Dataset (p.2): "We have split security data into three parts". Author(s) have to explain upon which criterions (i.e based on which) security data have been split.  }
+
+      \underline{Reply:} {\it The entire dataset contained data over 4 weeks, the split was done based on the individual weeks. We corrected this information in the mentioned section. }
+
+\item \underline{Comment:} {\it Chapter IV. DESIGN AND IMPLEMENTATION OF A SYSTEM FOR REAL-TIME PROFILING, A. Implementation, It should read: "In our test environment which " instead of "witch". }
+
+      \underline{Reply: } {\it This typo was corrected. We also proof-read the paper for additional typos and checked the grammar.      }
+
+\newpage
+\begin{center}
+\large
+Reply to Reviewer 2
+\\
+\end{center}
+We would like to thank the reviewer for the comments which helped us a lot to improve the paper. In the following we address the comments in detail.
+
+\ben[1.]
+\item \underline{Comment:} {\it  The theoretical part of the paper should be blended clearly with the details of how it follows the research in [3]. For example, from the article it is not clear why exactly seven clusters are used, how they were formed or how the assignment to cluster was done.
+Moreover, the State-of-Art Section is more oriented to the clustering problems than to real-time processing of threats.
+  }
+
+      \underline{Reply:} {\it We have specified in more detail how this paper follows the previous research in [3].      \\ 
+      It is true that the State-of-the-Art section is oriented towards clustering methods, due to the fact they identify real-time processing for future work. In our ongoing research we aim to bridge that gap. }
+
+\item \underline{Comment:} {\it The informative value of Figures 4 and 5 is not sufficient; a better description of the data in the Figures would be needed as well as their description in the text. For example, the paper says, "As can be seen in Fig. 4, the total number of IP addresses oscillates around a specific value", but on Fig. 4 no IP addresses are labeled. }
+
+      \underline{Reply: } {\it We have edited the description of both figures to make their information value clearer.      }
+
+\item \underline{Comment:} {\it Also, it is not clear from the article whether the accuracy of the experiment has been verified. }
+
+      \underline{Reply: } {\it This paper reports current results of our ongoing research, where the verification methods are an identified research gap that we will address in our future work.      }
+
+\item \underline{Comment:} {\it The weaknesses of the paper:\\
+Weak explanation of the research it refers to.\\
+Deeper summary/conclusion is expected.\\
+Very low quality of Figure 2.
+ }
+
+      \underline{Reply: } {\it
+      We addressed the first two weaknesses in the above comments.\\ 
+       Figures 1 and 2 were changed with a higher quality pictures.      }
+
+\item \underline{Comment:} {\it There is a typo: "a the second one was recalculating" }
+
+      \underline{Reply:} {\it This typo was corrected. We also proof-read the paper for additional typos and checked the grammar. }
+      
+
+
+
+\end{document}
